@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <sys/utsname.h>
 #include <fstream>
+#include "logos.hpp"
 
 #if defined(__linux__)
     #define CF_LINUX 1
