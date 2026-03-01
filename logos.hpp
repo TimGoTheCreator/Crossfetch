@@ -59,3 +59,19 @@ const char* logo_ubuntu =
 "\033[37m         :ooooooolc:. \033[31m.ooooooooooo'\033[0m\n"
 "\033[37m           ':loooooo;  \033[31m,oooooooooc\033[0m\n"
 "\033[37m               ..';::c'  \033[31m.;loooo:'\033[0m\n";
+
+// -----------------------------
+// Logo mapping
+// -----------------------------
+std::string get_logo(const std::string& distro) {
+    if (distro.find("Arch") != std::string::npos) {
+        return logo_arch;
+    }
+    if (distro.find("Debian") != std::string::npos) {
+        return logo_debian;
+    }
+    if (distro.find("Ubuntu") != std::string::npos) {
+        return logo_ubuntu;
+    }
+    return ""; // nothing if not recognized
+}
