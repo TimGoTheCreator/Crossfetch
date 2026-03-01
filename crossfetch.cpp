@@ -193,10 +193,20 @@ int main() {
     char hostname_buf[256];
     gethostname(hostname_buf, sizeof(hostname_buf));
 
+    std::string distro = get_distro();
+    std::string logo = get_logo(distro);
+
     std::cout << "Crossfetch\n";
     std::cout << "-----------\n";
+
+    // Print logo if available
+    if (!logo.empty()) {
+        std::cout << logo << "\n";
+    }
+
+    // Print system info
     std::cout << "OS:        " << u.sysname << " " << u.release
-              << " (" << get_distro() << ")\n";
+              << " (" << distro << ")\n";
     std::cout << "Host:      " << hostname_buf << "\n";
     std::cout << "CPU:       " << get_cpu() << "\n";
     std::cout << "RAM:       " << get_ram() << "\n";
