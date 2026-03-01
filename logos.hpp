@@ -40,7 +40,7 @@ const char* logo_debian =
 "\033[31m              `\"\"\"         \033[0m\n";
 
 const char* logo_ubuntu =
-"\033[37m....              $2.',:clooo:  \033[31m.:looooo:.\033[0m\n"
+"\033[37m                  $2.',:clooo:  \033[31m.:looooo:.\033[0m\n"
 "\033[37m           ;looooooooc  \033[31m.oooooooooo'\033[0m\n"
 "\033[37m        ;looooool:,''.  \033[31m:ooooooooooc\033[0m\n"
 "\033[37m       ;looool;.         \033[31m'oooooooooo,\033[0m\n"
